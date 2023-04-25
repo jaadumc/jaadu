@@ -1,0 +1,67 @@
+			Practical 5: Designig the cube in MSSQL
+5.A>
+	
+BI-> Practical->  SQL sCript->COpy->click on new query on ssms and paste and execute.
+
+Step 1:- Create tha database , and paste the Query from Database Warehouse SQL Script and execute.
+ 
+Step 2:- Now open SQL server Data Tools , New->Project -> Analysis Services-> multi dimensional.....
+
+Step 3:- Click on Data Source-> New Daata Source 
+ 
+Next -> 
+
+Step 4:- Click On New -> Put “.” In server name and then select the database->ok.
+ 
+Next->Inherit->
+ 
+Next-> Finish.
+
+Step 5:- Data Source Views-> New Data Sorce View->Next->
+ 
+Next->
+ 
+Select The Last table “FactProductSales” -> then Click on “>” this -> Add Related Tables-> Next
+ 
+Click On Finish 
+
+Step 6:-Cubes-> New Cube->Next 
+ 
+Next 
+
+Select “FactProductSales” Next
+ 
+Next->Next-> Finish
+
+Step 7:- Click on Cube-> New cube->Next->Next->factproduct sales->next->next->Sales_DW_Cube->finish
+ 
+Click on Dimensions-> Dim Customer.dim
+Click on Customer Name->and drag and drop to the attributes
+
+Click on Dim date.dim-> Drag and drop Date key, Full date Key, Month Name,Quarter name,Week of month,Year to the attributes and also to the Hierarchies table
+ 
+Click on Dim Sales Person.dim , Drag and drop Country ,city, Sales Person name and state to the attributes and city state and country to the hierarchies
+ 
+Step 8:-click on database -> Properties-> Deployment -> set processing option to do not process-> set Server mode to Deploy All-> Apply-> Ok
+ 
+Step 9:-Click on database-> Deploy-> wait for deployment process
+
+Step 10:- right click on the project name in the solution explorer->process->Run.There will be error message which will show the list of errors related to the connections in that error list we have to select OLEDB error(2nd error).copy the details in the notepad.
+
+Step 11:- go to ssm->security->new->login and past the string which is copied in the notepad as a login name->Now select the database. 
+
+Step 12:- User mapping  select the database(created in SSMS)->select db_ datareader->ok
+
+Step 13- Go to the dataserver tool-> Right click on the projecct name-> process->run->close.
+
+Step 14 Cubes-> Browser-> Now You can Drag and drop the column you want to add from left side.
+
+
+MDX Query
+
+Step 1: open ssms
+step 2: chnage the server type to analysis services
+step 3: click on new query 
+step 4: type the query 
+query: select [measures].[sale time alt key] on columns form [sales DW_cube]
+

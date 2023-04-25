@@ -1,0 +1,23 @@
+			Practical 4: ETL Scheduling in MSSQL
+	
+Step 1:- open the Previous ETL project , then Click on integration services catalogs and then create new catalog and then give password then ok. 
+
+Step 2:- in SQL server Data tools, open the Previous ETL project then click on the project name from the right hand side window then select the Deploy 
+
+Step 3:-put “.” In the server name and then click on the browse in the Path section, then new folder , give folder name , okay
+ 
+Step 4:- click on next and then click on deploy. 
+
+Step 5:- go to Sql amangement studio, click on SQL server agent, then new and then job 
+
+Step 6:- Give the name and description and ok.
+ 
+Step 7:- Go to steps tab, Click on new , give step name and select the type from the dropdownlist as SQL server Integration Services Package 
+
+Step 8:- Put ‘.’ In the server name and then in the package section browse the path and select the package and ok. 
+Step 9:- Go to schedules tab, Give the name and select properties according to your need. And then ok
+
+Step 10:- Select the the table from the database and then click on New Query and give the Query(INSERT INTO destination file VALUES(4,'ABC',30000  ) and then Execute 
+ 
+Step 11:-they query’s execution is depend on the scheduling u set.
+ 

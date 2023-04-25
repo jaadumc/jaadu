@@ -1,0 +1,43 @@
+			Practical 3: ETL in MSSQL	
+
+Step 1:- Create a databse containing a table 
+ 
+Step 2:- Create a 2nd  databse containing a table same column name as database 1 columns and add 1 extra column 
+
+Step 3:- open Sql server data tools, create a new project , take data flow task and execute SQL task in control flow and connect them.
+ 
+Step 4:- In data flow task , take OLE DB Source , Derived column and OLE DB destination
+
+Step 5:- configure the OLE DB Source and add the 1st database we had created 
+ 
+Step 6:- add the table and ok.
+
+Step 7:- connect the OlLE DB source to Derived Column 
+ 
+Step 8:- click on the derived column then enter the derived column name that u have added extra in the 2nd database than 1st database. Put SAL/60 in Expression and select data type and ok.
+
+Step 9:- Now Connect the Derived column to the OLE DB Destination 
+ 
+Step 10:- Configure The OLE DB Destination and add the 2nd database and ok.
+
+Step 11:- click on the new in the table section and give the table name as you want and ok .
+ 
+Step 12:-Check the mappings and ok.
+
+Step 13:- click on the Execute SQL Task and select the 2nd database that we have created earlier.
+ 
+Step 14:- in SQLStatement put SQL Query “TRUNCATE TABLE (Table Name )”. 
+
+Step 15:-in SQL management studio refresh the 2nd database that we have added in the SQL Task . and u can see the new table added in the databse. Copy the table name 
+
+Step 16:- paste the table name that u have copied from the database And then set BypassPrepare as False .
+
+Step 17:- parse the Query and ok
+ 
+Step 18:- Execute .
+ 
+Step 19:- Refresh the 2nd database table and then u can see the data is imported from 1st database columns to 2nd database columns and 1 more extra column is also added .
+ 
+
+
+

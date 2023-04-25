@@ -1,0 +1,51 @@
+			Practical 1
+
+1.A>	Extraction From MSSQL to MSSQL
+
+Step 1: Open SQL Server Management Studio,Then Connect To The Database.
+ 
+Step 2: Right Click On Database And Create 2 Database Emp1 And Emp2 
+ 
+Step 3 : Expand The Emp 1 Database , Right Click On Table And Create A New Table And Enter The Column Name And Data Type then Right Click on ID and set as primary key And Save The Table
+  
+Step 4: Right Click On The Table We Save And Click On Edit Top 200 Rows And Enter Some Values In It And Then Execute Sql.
+ 
+Step 5: Now Open Sql Server Data Tool  Then Click On New Project, Click On Integration Services Project
+ Name The Project And Click On Ok 
+ 
+Step 6: In SSIS Toolbox  Drag 2 Data Flow Task 
+ 
+Step 7 : Click On Data Flow Task  Drag Ole Db Source And Ole Db Destination And Connect Them 
+ 
+Step 8 : Click On OLE DB Source 
+ 
+Step 9 : Then Click On New And Create A Data Connection Then Click Ok 
+ 
+Step 10 : Now Give The Server Name As . And Select The Database Name Then Test The Connection And Click Ok.
+ 
+Step 11 : Now Select The Table Name And Click Ok
+ 
+Step 12: Now Click On Ole Db Destination Click On New And Create A Data Connection Then Click Ok  Give The Server Name As  . And Select The Database Name Test The Connection And Click Ok 
+ 
+Step 13: Now We Have To Create A New Table 
+ 
+Step 14: Check The Mapping 
+ 
+Step 15: Now Start Debugging The Project
+ 
+Step 16: Now Go To Sql Server Management Studio And Expand The Second Database We Created In That Right Click On Table And Refresh It We Can See That A New Table Is Created There 
+ 
+Step 17: Now Right Click On That Table And Click On Select Top 1000 Rows The Data Is Successfully Copied.
+ 
+
+
+
+1.B>		Extraction from excel to MS SQL	
+
+Step 1: Create A Excel Sheet And Enter Some Values
+ 
+Step 2: Create A Database Myinfo
+ 
+
+Step 3: In Sql Data Tool Create A New Project 
+

@@ -1,0 +1,10 @@
+			Practical 6: What if Analysis? How to use the Scenario Manager	 
+
+Step1: Right click on Scenario  open with Excel  Date  What if Analysis?  Scenario Manager…
+                
+Step2: Scenario name (Original Values)  Changing Values (B4,B6:B12,B17)  Comment (Values when we started)  OK  OK  Add  Scenario name (Medium Venue)  clear Comment Change the values  OK  ADD  Scenario name (Large Venue)  clear Comment Change the values  OK  ADD  Scenario name (Very Large Venue)  clear Comment Change the values  Summary  OK  Change the name In the Summary…
+  
+    
+
+ 
+

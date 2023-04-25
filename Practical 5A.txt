@@ -1,0 +1,25 @@
+			Practical 6B
+
+6.B> Import the datawarehouse data in microsoft excel and create the pivot table and pivot chart	
+
+Step 1:-Open excel
+Go to Data tab->Get External Data->From Other Sources->From Data
+Connection Wizard
+ 
+Step 2:- In Data Connection wizard->Select Microsoft SQL server->Click on next
+ 
+Step 3:-In Connect to Database Server Provide Server Name and then windows authentication click on next
+ 
+Step 4:- In Select Database and table->Select Sales_DW(Alredy Created in SQL)->Check All dimensions and import relationships between selected tables
+
+Step 5:-in save data connection files browse path and click on finish
+ 
+Step 6:- in import data select pivot chart and click on OK
+
+Step 7:- select field to create Pivot chart 
+
+Step 8:- In insert Tab-> go to pivot table
+
+Step 9:- Click on choose connection to select existing connection with Sales_DW and click on open
+Pivot chart and pivot table is created
+ 

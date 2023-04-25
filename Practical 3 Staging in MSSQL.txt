@@ -1,0 +1,43 @@
+			Practical 2: Staging in MSSQL	
+
+Step 1 :- Open SQL Server Management Studio,Then Connect To The Database.Create The database 
+ 
+Step 2:- Now Open Sql Server Data Tool  Then Click On New Project, Click On Integration Services Project Name The Project And Click On Ok 
+ 
+Step 3:- In SSIS Toolbox Drag 1 Data Flow Task 
+ 
+Step 4:- Click On Data Flow Task ,Drag Ole Db Source And Ole Db Destination And Connect Them 
+ 
+Step 4:- Click On The OLE DB Source, and the NEW->
+ 
+Step 5:- Click on NEW 
+  
+Step 6:-Put “.” In server name then select the database from dropdownlist and then ok.
+ 
+Step 7:-Select The Table .then ok 
+
+Step 8:- Click On OLE DB Destination and click on new connection
+ 
+Step 9:- put “.” In server name and then select the database and then ok.
+ 
+Step 10:- Click on New table 
+ 
+Step 11:- Give the table name and then ok.
+ 
+Step 12:-Check The Mappings and then ok.
+ 
+Step 13:- Execute
+
+Step 14:- Go back to SQl management Studio, And refresh the database. You can see the table is imported from another database.
+ 
+Step 15:- if you again execute ,   then you can see the data duplication is there
+
+So, to remove data duplication we have to set command
+
+Step 16:- Add Execute SQL Task in control Flow
+ 
+Step 17:-Click on Execute SQL task and then select the database, give the command and then “truncate table (Table Name )” and then set BypassPrepare are as “false” and then click on Parse Query then ok.
+ Step 18:- Execute 
+ 
+Step 19:- refresh and execute and then u can see the data duplication is removed 
+ 

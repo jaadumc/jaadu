@@ -1,0 +1,28 @@
+			Practical 6A
+6.A> Import the cube in Microsoft excel and create the pivot table and pivot chart to perform data analysis 	
+
+Step 1:-
+Open excel
+Go to Data Tab-> Get External Data-> From Other sources-> From Analysis services
+
+Step 2:-
+select server name and Windows authentication and click on next
+ 
+Step 3:-
+select database-> Sales DW and click on next
+ 
+Step 4:- 
+Browse and select path name and click on finish
+ 
+Step 5:-
+Select Pivot Table Report
+
+Step 6:-
+Drag And drop Fields in rows column and values
+ 
+Step 7:-
+Go to Data tab->Existing Connections->open->Pivot Chart->ok.
+
+Step 10:-
+Select the fields you want to insert in the pivot table 
+Pivot Chart and Pivot table is created 
